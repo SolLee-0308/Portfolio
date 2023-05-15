@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" href="./images/favsol32.png">
     <link rel="apple-touch-icon=precomposed" href="./images/favicon/favsol180.png">
-
+    
     <!-- 기본 코딩 CSS 파일 -->
     <link rel="stylesheet" href="./css/reset.css">  
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
@@ -24,7 +24,6 @@
     <script src="./js/jquery.bxslider.js"></script>
     <script src="./js/swiper-bundle.js"></script>
 </head>
-
 <body>
     <div id="wrap">
         <!-- 1. Header -->
@@ -44,7 +43,7 @@
             </nav>
             <!-- /GNB -->
             <!-- Hamburger Toggle -->
-            <span>
+            <span class="menu_toggle_btn">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -59,7 +58,8 @@
         <article class="slider">
             <div id="gallery_wrap">
                 <ul class="slide_gallery">
-                    <li><img src="http://placehold.it/1440x520" alt="slide"></li>
+                    <li><img src="./images/main01.jpg" height="1080" alt="main01"></li>
+                    <li><img src="./images/main06.jpg" height="1080" alt="main03"></li>    
                 </ul>
             </div>
         </article>
@@ -67,19 +67,22 @@
 
 
 
+
         <!-- 3. Contents -->
         <section class="content">
             <!-- 3-1. display -->
             <section class="display_section">
-                <div>
-                    <h2>WE&nbsp;ARE</h2>
-                    <p>
-                        Dani Mackenzie candles use 100% pure plant aromas and natural vegetable
+                <div class="cf">
+                    <h2 class="sec_title">WE&nbsp;ARE</h2>
+                    <p class="desc">
+                        Dani Mackenzie candles use 100% pure plant aromas and natural vegetable <br>
                         waxes that are as good for the environment as they are for you.
                     </p>
                 </div>
             </section>
             <!-- /3-1. display -->
+
+
             <!-- 3-2. Promotion -->
             <section class="promotion_section">
                 <h2>
@@ -127,8 +130,8 @@
                     </ul>
                 </h2>
             </section>
-            <!-- /3-2. Promotion -->            
-            <hr class="divider">           
+            <!-- /3-2. Promotion -->
+            <hr class="divider">  
             <!-- 3-3. Work -->
             <section class="work_section">
                 <div>
@@ -210,7 +213,7 @@
                 </div>
             </section>
             <!-- /3-3. Work -->
-            <hr class="m_divider">            
+            <hr class="m_divider">           
             <!-- 3-4. Blog -->
             <section class="blog_section">
                 <div>
@@ -252,7 +255,7 @@
                     </ul>
                 </div>
             </section>
-            <!-- /3-4. Blog -->           
+            <!-- /3-4. Blog -->
             <!-- 3-5. Contact -->
             <section class="contact_section">
                 <div>
@@ -292,7 +295,7 @@
         <!-- /3. Contents -->
 
 
-        
+
         <!-- 4. Footer -->
         <footer class="footer">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25315.627834087492!2d126.98769687910159!3d37.52080620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3eb6da7589b%3A0x12a0299d6b91faf1!2zQXBwbGUg6rCA66Gc7IiY6ri4!5e0!3m2!1sko!2skr!4v1676943352807!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -302,5 +305,6 @@
         </footer>
     </div>
 </body>
+<script src="./js/rwd_template.js"></script>
 </html>
 
