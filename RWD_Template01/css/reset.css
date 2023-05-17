@@ -1,23 +1,21 @@
 @charset "utf-8";
-
+/* Reset */
 /* CSS 불러오기 */
 @import url(./font.css);
-
-/* CSS 초기화 */
-html,
-body,
-div,
-span,
-iframe,
-h1, h2, h3, h4, h5, h6,
-p,
-blockquote,
-pre,
-cite,
-code,
-del,
-em,
-img,
+html, 
+body, 
+div, 
+span, 
+iframe, 
+h1,h2,h3,h4,h5,h6, 
+p, 
+blockquote, 
+pre, 
+cite, 
+code, 
+del, 
+em, 
+img, 
 ins,
 q,
 small,
@@ -49,6 +47,7 @@ figcaption,
 figure,
 footer,
 header,
+hgroup,
 nav,
 section,
 summary,
@@ -65,17 +64,29 @@ button {
     font-weight: normal;
     vertical-align: baseline;
 }
-
-/* 문서전체 CSS/적용 */
+/* 문서 전체 CSS 적용 */
 body {
     line-height: 1;
 }
+/* HTML5 시멘틱 태그들 IE 구버전 인식 설정 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
 
 /* List 요소 */
-ul, ol, li {
+ul, li, ol {
     list-style: none;
 }
-/* A 요소 */
+
+/* Anchor 요소 */
 a {
     text-decoration: none;
     color: inherit;
@@ -97,6 +108,16 @@ hr {
     border: 0;
 }
 
+/* input, textarea 요소 */
+input, textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
 /* button 요소 */
 button {
     background: none;
@@ -107,27 +128,14 @@ button {
     box-sizing: border-box;
 }
 
-/* 플롯 해제 */
-.cf::after {
+/* 플롯해제 */
+.cf:after {
     content: "";
     display: block;
     clear: both;
 }
 
-/* 모든 환경에 안 보여도 되지만, 반드시 입력해야 할 html태그가 존재
-(웹 접근성 때문에) */
-/* 그때, 해당 요소를 숨기기 위해 사용하는 class */
-.blind {
-    position: absolute;
-    left: -9999px;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    text-indent: -9999px;
-    overflow: hidden;
-}
-
-/* 패딩, 마진값 초기화 클래스 */
+/* 마진, 패딩 없애기 */
 .no_mt {margin-top: 0 !important;}
 .no_mr {margin-right: 0 !important;}
 .no_mb {margin-bottom: 0 !important;}
@@ -137,3 +145,15 @@ button {
 .no_pr {padding-right: 0 !important;}
 .no_pb {padding-bottom: 0 !important;}
 .no_pl {padding-left: 0 !important;}
+
+.no_bd {border: none !important;}
+
+/* 브라우저에 안보여도 되지만, 반드시 입력해야 할 HTML태그가 존재(웹접근성 때문에) */
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -99999px;
+    overflow: hidden;
+}
