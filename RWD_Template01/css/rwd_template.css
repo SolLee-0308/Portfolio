@@ -153,6 +153,7 @@ body {
 
 /* 3-2. Promotion */
 .promotion_section {
+    padding: 18px 5%;
     margin-top: 68px;
 }
 .promotion_section .promotion_list li {
