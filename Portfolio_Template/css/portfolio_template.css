@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@font-face {
+    font-family: JS-Roboto;
+    src: url('../font/Roboto/Roboto-Regular.ttf'),
+        url('../font/Roboto/Roboto-Bold.ttf'),
+        url('../font/Roboto/Roboto-Medium.ttf');
+    unicode-range: U+0061-007A,
+    U+0041-005A,
+    U+0030-0039;
+}
+@font-face {
+    font-family: JS-nanumGothic;
+    src: url('../font/Nanum_Gothic/NanumGothic-Regular.ttf'),
+         url('../font/Nanum_Gothic/NanumGothic-Bold.ttf');
+    unicode-range: U+AC00-D7A3,
+    U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+
+body {
+    background: #f7f7f7;
+    color: #222222;
+    font-family: "Roboto",Nanum gothic;
+    font-size: 1rem;
+}
+#wrap {
+    max-width: 1920px;
+}
+main {
+    padding: 15vw 5vw 15vw 25vw;
+}
+
+/* ================================================== */
+/* ================================================== */
+
+/* 0. Navigation Bar */
+.gnb_bar {
+    width: 20vw;
+    height: 100vh;
+    padding-top: 15vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.gnb_bar ul li {
+    line-height: 50px; 
+    font-weight: bold; 
+    font-size: 1.4rem; 
+}
+.lnb_bar ul li {
+    font-weight: normal; 
+    display: none;
+    font-size: 0.85rem;
+}
+.gnb_bar ul li a:hover {
+    color: #f7f7f7;
+    /* 추후에 다른 색으로 지정 */
+}
+
+/* ================================================== */
+/* ================================================== */
+
+/* 1. About */
+.section1_about_container ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+}
+.section1_about_container ul li img {
+    margin-right: 5vw;
+}
+.section1_about_container ul li p {
+    font-size: 0.875rem;
+    line-height: 2;
+}
+.section1_about_container ul li div {
+}
+
+
+
+/* 4. Contact */
+.section4_contact {
+    padding: 18px 5%;
+    margin-top: 100px;
+}
+.section4_contact .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+input, textarea {
+    border-bottom: 1px solid #757575;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #42653b;
+}
+
+/* Input form */
+.form_box .form input {
+    padding-bottom: 14px;
+    margin-bottom: 40px;
+    background: #f7f7f7;
+}
+
+/* TextArea form */
+.form_box .txta {
+    height: 170px;
+}
+.form_box .txta textarea {
+    background: #f7f7f7;
+}
+/* Button */
+.form_box .send_btn {
+    margin-top: 36px;
+    text-align: right;
+}
+.form_box .send_btn button {
+    font-size: 14px;
+    font-size: 0.75rem;
+    color: #fff;
+    background: #42653b;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+
