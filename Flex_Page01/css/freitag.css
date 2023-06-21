@@ -21,6 +21,7 @@ aside{
     height: 50px;
     background-color: #000;
     color: #fff;
+    /* border: 1px solid #000; */
     font-weight: 700;
 }
 .top_sub{
@@ -82,6 +83,10 @@ aside{
 .root_lnb .local .lnb li:nth-child(1){
     margin-left: 0;
 }
+/* .root_lnb .local .lnb li a i {
+    width: 20px;
+    height: 20px;
+} */
 
 
 /* GNB Menu */
@@ -92,15 +97,17 @@ aside{
     /* 플렉스 */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    height: 54px;
-    line-height: 54px;
+    /* justify-content: space-between; */
+    padding-top: 20px;
+    /* height: 54px; */
+    /* line-height: 54px; */
     font-size: 1.1rem;
 }
 .global h2 {
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 .global .gnb{
+    margin-right: 380px;
     /* 플렉스 */
     display: flex;
     flex-flow: row wrap;
@@ -117,16 +124,17 @@ aside{
     font-weight: 600;
 }
 .global .snb{
+    margin-right: 220px;
     /* 플렉스 */
     display: flex;
     flex-flow: row wrap;
 }
 .global .snb li{
-    margin-left: 28px;
+    margin-right: 25px;
 }
-.global .snb li a{
-    color: #020202;
-    font-weight: 500;
+.global .snb li a img{
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -157,30 +165,32 @@ aside{
     left: 50px;
     z-index: 9999;
 }
-
-
-
-
-
-
-
-
-/* Contents */
-main{
-
+.slide_gallery li img {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 /* Section 01 */
 .md_pick{
+    /* background: #000; */
     /* 플렉스 */
     display: flex;
-    margin-top: 142px;
+    /* margin-top: 142px; */
 }
 .md_pick h3{
     text-align: center;
     padding-top: 35px;
 }
-
+.md_pick .md_pick_text {
+    width: 500px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin: 0 auto;
+}
 .md_pick .md_pick_area{
     margin-top: 32px;
     /* 포지션 */
@@ -204,14 +214,17 @@ main{
 
 
 /* Section 02 */
-.real_title{
+.real_title {
     background-color: #f5f5f5;
+    background-color: #f4c837;
     margin-top: 150px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 .real_title_flex {
-        /* 플렉스 */
-        display: flex;
-        flex-flow: row nowrap;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
 }
 .real_title .real_time{
     /* 플렉스 */
@@ -230,21 +243,36 @@ main{
     margin-bottom: 14px;
 }
 .real_title .real_time ul li:first-child{
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
+    margin-top: 36px;
 }
 .real_title .real_time ul li:last-child{
-    margin-top: 65px;
+    /* margin-top: 65px; */
     margin-bottom: 0;
 }
-.real_title .real_time ul li a{
+.real_title .real_time ul li p{
     font-size: 1.7rem;
-    color: #393939;
+    font-size: 1.5rem;
+    /* color: #393939; */
     display: inline-block;
     width: 180px;
     height: 32px;
     line-height: 32px;
+    cursor: pointer;
 }
-.real_title .real_time ul li a:hover{
+.real_title .real_time ul li p{
+    /* font-size: 1.7rem; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* color: #000; */
+    border: 1px solid #000;
+    display: inline-block;
+    width: 180px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.real_title .real_time ul li p:hover{
     color: #fff;
     background-color: #000;
 }
@@ -253,15 +281,20 @@ main{
 }
 
 
-
 /* Section 03 */
 .caxa{
     margin-top: 124px;
     padding-left: 84px;
 }
 .caxa h2{
+    width: 350px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
     text-align: center;
-    margin-bottom: 44px;
+    margin: auto auto 44px auto;
 }
 .caxa .caxa_sns{
     /* 플렉스 */
@@ -269,6 +302,9 @@ main{
 }
 .caxa .caxa_sns li {
     border: 1px solid #000;
+}
+.caxa .caxa_sns .caxa_sns_list:nth-child(2) li {
+    border: none;
 }
 .caxa .caxa_sns ul:first-child{
     /* 플렉스 */
@@ -378,3 +414,86 @@ footer{
     width: 100%;
     height: 600px;
 }
+
+
+
+.freitag_mov {
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-size: 100% 100%;
+    
+    /* 포지션 위치기준값 */
+    position: relative;
+    
+}
+.freitag_mov .video {
+    width: 800px;
+    height: 450px;
+    padding: 50px 50px;
+    /* 포지션 */
+    /* position: absolute; */
+
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translateX(-50%); */
+}
+/* 추가 플레이어 버튼 작업 */
+#freitag_btn {
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* top: 91.5%; */
+    top: 40%;
+    border: none;
+    background: none;
+    outline: none;
+}
+#freitag_btn i {
+    font-size: 96px;
+    color: rgba(255,255,255,0);
+    cursor: pointer;
+}
+#freitag_btn i:hover {
+    color: rgba(255,255,255,0.8);
+    /* color: red; */
+}
+
+.freitag_mov .video:nth-child(2),
+.freitag_mov .video:nth-child(3),
+.freitag_mov .video:nth-child(4) {
+    display: none;
+}
+.on {
+    display: block;
+    background-color: #000;
+    color: #fff;
+}
+
+/* 이미지 정보 효과 */
+.caxa .caxa_sns_list li a {
+    /* 포지션 위치 기준 값 */
+    position: relative;
+}
+/* 셀로판지 효과 */
+.caxa .caxa_sns_list li a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #353635;
+    opacity: 0;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+/* 셀로판지 호버시 효과 */
+.caxa .caxacaxa_sns_list_sns li a:hover::before {
+    opacity: 0.4;
+}
+
