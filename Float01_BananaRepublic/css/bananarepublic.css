@@ -1,0 +1,655 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@font-face {
+    font-family: JS-Roboto;
+    src: url('../font/Roboto/Roboto-Regular.ttf'),
+        url('../font/Roboto/Roboto-Bold.ttf'),
+        url('../font/Roboto/Roboto-Medium.ttf');
+    unicode-range: U+0061-007A,
+    U+0041-005A,
+    U+0030-0039;
+}
+@font-face {
+    font-family: JS-nanumGothic;
+    src: url('../font/Nanum_Gothic/NanumGothic-Regular.ttf'),
+    url('../font/Nanum_Gothic/NanumGothic-Bold.ttf');
+    unicode-range: U+AC00-D7A3,
+    U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Safe Area */
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #222;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* Video Background */
+.video_wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.video_wrapper video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+
+/* Logo,GNB */
+header .logo_gnb_left{
+    width: 1170px;
+    /* serarch플롯 */
+    float: left;
+}
+header .logo{
+    width: 300px;
+    margin-top: 24px;
+    position: fixed;
+    z-index: 999;
+    /* nav플롯 */
+    float: left;
+}
+header nav{
+    /* .logo플롯 */
+    float: right;
+}
+header .gnb{
+    color: #fff;
+    font-weight: 400;
+    /* 포지션 */
+    position: fixed;
+    left: 720px;
+    top: 0;
+    z-index: 999;
+}
+header .gnb li{
+    margin-top: 24px;
+    margin-left: 24px;
+    /* 플롯 */
+    float: left;
+}
+header .gnb li a:hover{
+    color:#fc3;
+}
+/* Search Btn */
+header .serarch{
+    width: 110px;
+    /* 이게 왜 있지? */
+    text-align: right;
+    margin-top: 24px;
+    /* .logo_gnb_left플롯 */
+    float: right;
+}
+
+/* ImageText Deco */
+header .img_deco {
+    padding-left: 20px;
+}
+header .img_deco h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 98px;
+}
+header .img_deco p {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #999;
+}
+header .img_deco p:last-child{
+    margin-bottom: 200px;
+
+}
+header .img_deco button {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+header .img_deco button a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+.mov1 {
+    width: 100%;
+    height: 500px;
+}
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Section CardBox */
+.card_box {
+    background-color: #dfd2c2;
+}
+/* 3단 CardBox */
+.card_box .card_view {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    margin-right: 40px;
+    /* 플롯 */
+    float: left;
+    /* 포지션 3단 CardBox 겹치기 */
+    /* 바로 relative를 줘서 홀이 없는 상태, 따라서 그자리에 위치함 */
+    position: relative; 
+    left: 0;
+    top: -80px;
+    z-index: 1;
+}
+/* CardBox Text */
+.card_box_info {
+    padding-bottom: 60px;
+}
+.card_box .card_view img {
+    width: 400px;
+    height: 500px;
+}
+.card_box_info h2 {
+    font-size: 12px;
+    color: #807f7f;
+    font-weight: 400;
+    /* 플롯 */
+    float: left;
+}
+.card_box_info h2>span {
+    color: #373636;
+    font-weight: 500;
+}
+.card_box_info p {
+    font-size: 18px;
+    color: #807f7f;
+    font-weight: 600;
+    /* 플롯 */
+    float: right;
+}
+.card_box_info p>img {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* Section ABOUTUS */
+.about_us {
+    padding-top: 60px;
+}
+.about_us .about_us_text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+.about_us .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #fff;
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+.about_us_container {
+    margin-top: 60px;
+    padding: 60px 60px;
+    background-color: #dfd2c2;
+}
+
+/* 여기까지 2차 확인함 */
+.about_us_tabs {
+    width: 640px;
+}
+.about_us_tabs h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about_us_tabs {
+    text-align: left;
+}
+.about_us_tabs p:hover {
+    color: #807f7f;
+}
+.about_us_title p {
+    margin: 30px 184px 15px -3px;
+    font-size: 24px;
+    display: inline-block;
+    cursor: pointer;
+}
+.line_dots {
+    width: 615px;
+    height: 22px;
+}
+.line_dots .line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #222;
+}
+.line_dots .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #222;
+    float: left;
+    position: relative;
+    top: -8px;
+    left: 40px;
+    z-index: 9999;
+}
+.line_dots .dot:nth-child(3) {
+    left: 340px;
+}
+.line_dots .dot:nth-child(4) {
+    left: 600px;
+}
+.about_us_content {
+    margin-top: 30px;
+    float: left;
+}
+.about_us_content_left,
+.about_us_content_right {
+    width: 640px;
+    float: left;
+}
+.about_us_content_left {
+    padding-right: 25px;
+    line-height: 1.8;
+}
+.about_us_content_right img {
+    margin-left: 25px;
+}
+
+/* Tab Menu */
+.on {
+    display: block;
+    color: #807f7f;
+}
+.line_dots .dot:nth-child(3),
+.line_dots .dot:nth-child(4),
+.about_us_content_all .about_us_content:nth-child(2),
+.about_us_content_all .about_us_content:nth-child(3) {
+    display: none;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* Article MOV */
+.mov2 {
+    width: 100%;
+    height: 500px;   
+    /* 포지션 위치기준값 */
+    position: relative;
+    
+}
+.mov2 .video video {
+    width: 1060px;
+    height: 560px;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+}
+
+/* 추가 플레이어 버튼 작업 */
+/* #mont_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 91.5%;
+    border: none;
+    background: none;
+    outline: none;
+} */
+/* #mont_btn i {
+    font-size: 96px;
+    color: rgba(255,255,255,0);
+    cursor: pointer;
+}
+#mont_btn i:hover {
+    color: rgba(255,255,255,0.8);
+} */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+.mov2 .mov2_text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+.mov2 .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 60px;
+    
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+.mov2 {
+    /* margin-top: 60px; */
+    padding: 100px 0 0;
+}
+
+
+
+/* Section History */
+.collection {
+    background-color: #dfd2c2;
+    height: 1010px;
+    padding-top: 100px;
+    /* 포지션 홀 때문에 높이값 추가 */
+    padding-top: 380px;
+    padding-bottom: 160px;
+}
+.collection_content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.collection_images,
+.collection_text {
+    width: 640px;
+    float: left;
+}
+.collection_images img:first-child {
+    margin-right: 25px;
+}
+.collection_text {
+    padding-left: 25px;
+}
+.collection_text p {
+    line-height: 1.8;
+}
+.collection_content .collection_text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Section FAQ */
+.faq {
+    background-color: #dfd2c2;
+    height: 820px;
+    border-top: 1px solid #222;
+    padding-top: 60px;
+}
+.faq_menu {
+    padding-right: 25px;
+}
+.faq_people {
+    padding-left: 25px;
+}
+.faq_menu,
+.faq_people {
+    width: 640px;
+    float: left;
+}
+.faq_title {
+    cursor: pointer;
+}
+.faq_menu .faq_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    padding: 13px 0 12px;
+    padding: 30px 0 30px;
+    border-bottom: 1px solid #807f7f;
+}
+.faq_menu .faq_title {
+    background-image: url('../images/mark_plus.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 32px 32px;
+}
+.faq_sub {
+    padding: 16px 0;
+}
+.faq_sub {
+    display: none;
+}
+.mark {
+    background-image: url('../images/mark_minus.png') !important;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.clicked {
+    display: block !important;
+    border-bottom: 1px solid #807f7f;
+}
+.clicked dd {
+    padding: 8px;
+    color: #807f7f;
+}
+
+.faq_menu h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.faq_people h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-bottom: 28px;
+}
+.faq_people .artist_left {
+    width: 100px;
+    float: left;
+}
+.faq_people .artist_right {
+    width: 515px;
+    float: left;
+    padding-top: 12px;
+}
+.faq_people .artist_right h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.faq_people .artist_right span {
+    font-size: 14px;
+    color: #807f7f;
+}
+.faq_people_container {
+    margin-bottom: 60px;
+}
+.artist01, 
+.artist02 {
+    margin-bottom: 12px;
+}
+.faq_people p {
+    line-height: 1.8;
+}
+.faq_people .artist_show {
+    margin-left: 178px;
+}
+.faq_people .artist_show button {
+    width: 200px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    margin-right: 16px;
+    margin-top: 20px;
+}
+.faq_people .artist_show button:hover {
+    color: #807f7f;
+    border-bottom: 1px solid #807f7f;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* Footer */
+.footer {
+    background-color: #dfd2c2;
+    padding-top: 100px;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+/* Footer Logo, SNS */
+.footer .footer_logo {
+    width: 510px;
+    text-align: left;
+}
+.footer .footer.footer_logo dt {
+    margin-bottom: 24px;
+}
+.footer .footer_logo dd {
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 28px;
+}
+.footer .footer_logo .sns {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer .footer_logo .sns i {
+    font-size: 24px;
+}
+
+/* Customer Support */
+.customer_support {
+    width: 256px;
+}
+.customer_support dt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.customer_support dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.customer_support dd a:hover {
+    color: #fff;
+}
+
+
+/* Styling Service */
+.styling_service {
+    width: 256px;
+}
+.styling_service dt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.styling_service dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.styling_service dd a:hover {
+    color: #fff;
+}
+/* Footer Rewards */
+.footer_rewards {
+    width: 256px;
+}
+.footer_rewards dt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer_rewards dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer_rewards dd a:hover {
+    color: #fff;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 32px;
+}
+.copyright .copyright_line {
+    width: 100%;
+    border-bottom: 1px solid #222;
+    margin-bottom: 32px;
+}
+.copyright p {
+    font-size: 14px;
+}
+
+/* 플롯 */
+.footer_logo,
+.customer_support,
+.styling_service,
+.footer_rewards {
+    float: left;
+}
+.copyright{
+    clear: both;
+}
+
+
+/* Top Button */
+/* aside .top {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 999;
+    display: none;
+}
+aside .down {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 999;
+    display: none;
+}
+aside div i {
+    color: transparent;
+    text-shadow: -1px 0px #222, 0px 1px #222, 1px 0px #222, 0px -1px #222;
+}
+aside div .fa {
+    font-size: 40px;
+} */

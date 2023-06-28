@@ -1,0 +1,563 @@
+@charset "utf-8";
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Safe Area */
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* Video Background */
+.video_wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.video_wrapper video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+
+/* Logo,GNB */
+header .logo_gnb_left{
+    /* width: 100%;
+    position: fixed; */
+    width: 1170px;
+    /* serarch플롯 */
+    float: left;
+    /* background: #dfd2c2; */
+    /* height: 80px; */
+    /* z-index: 9999; */
+}
+header .logo{
+    width: 300px;
+    margin-top: 24px;
+    position: fixed;
+    z-index: 999;
+    /* nav플롯 */
+    float: left;
+}
+header nav{
+    /* .logo플롯 */
+    float: right;
+}
+header .gnb{
+    color: #fff;
+    font-weight: 400;
+    /* 포지션 */
+    position: fixed;
+    left: 720px;
+    top: 0;
+    z-index: 999;
+}
+header .gnb li{
+    margin-top: 24px;
+    margin-left: 24px;
+    /* 플롯 */
+    float: left;
+}
+header .gnb li a:hover{
+    color:#fc3;
+}
+/* Search Btn */
+header .serarch{
+    width: 110px;
+
+    /* 이게 왜 있지? */
+    text-align: right;
+
+    margin-top: 24px;
+    /* .logo_gnb_left플롯 */
+    float: right;
+}
+
+
+/* ImageText Deco */
+header .img_deco {
+    padding-left: 20px;
+}
+header .img_deco h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 98px;
+}
+header .img_deco p {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #999;
+}
+header .img_deco p:last-child{
+    margin-bottom: 200px;
+
+}
+header .img_deco button {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 20px;
+}
+header .img_deco button a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+.mov1 {
+    width: 100%;
+    height: 500px;
+    /* background: url(/060_가변형단위/images/background01.jpeg) no-repeat; */
+    
+    /* background-position: center center; */
+    /* background-size: 100% 100%; */
+    
+    /* 포지션 위치기준값 */
+    /* position: relative; */
+    
+}
+/* .mov1 .video #mont_video { */
+    /* width: 1060px; */
+    /* height: 560px; */
+    /* 포지션 */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translateX(-50%); */
+/* } */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Section CardBox */
+.card_box {
+    background-color: #dfd2c2;
+}
+/* 3단 CardBox */
+.card_box .card_view {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    margin-right: 40px;
+    
+    /* 플롯 */
+    float: left;
+
+    /* 포지션 3단 CardBox 겹치기 */
+    /* 바로 relative를 줘서 홀이 없는 상태, 따라서 그자리에 위치함 */
+    position: relative; 
+    left: 0;
+    top: -80px;
+    z-index: 1;
+}
+
+/* CardBox Text */
+.card_box_info {
+    padding-bottom: 60px;
+}
+.card_box .card_view img {
+    width: 400px;
+    height: 500px;
+}
+.card_box_info h2 {
+    font-size: 12px;
+    color: #807f7f;
+    font-weight: 400;
+    
+    /* 플롯 */
+    float: left;
+}
+.card_box_info h2>span {
+    color: #373636;
+    font-weight: 500;
+}
+.card_box_info p {
+    font-size: 18px;
+    color: #807f7f;
+    font-weight: 600;
+    /* 플롯 */
+    float: right;
+}
+.card_box_info p>img {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+/* <!-- Section ABOUTUS --> */
+
+.about_us .about_us_first_text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+.about_us .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 60px;
+    
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+
+
+.about_us {
+    padding: 100px 0 0;
+    color: #222;
+}
+.tab_contents {  
+    height: 700px;
+    background-color: #dfd2c2;
+}
+.tabs,
+.tab_btn {
+    margin-bottom: 20px;
+}
+.tab_btn li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.tab_btn li:hover{
+    color: #fff;
+}
+/* 원 만들기 */
+/* .circle {
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border: 10px solid #fff;
+    border: 10px solid #9f9888;
+    border: 10px solid #363731;
+    border-radius: 50%;
+
+    position: relative;
+    bottom: 42px;
+    right: 140px;
+    z-index: 88;
+} */
+.list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* .tab_contents_right img {
+    height: 500px;
+} */
+.tabs_line {
+    /* border: 1.5px solid #fff;
+    border: 1.5px solid #9f9888;
+    border: 1.5px solid #363731; */
+    margin-bottom: 30px;
+}
+.about_us_tab {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 60px;
+}
+.tab_contents .list:nth-child(2),
+.tab_contents .list:nth-child(3) {
+    display: none;
+}
+.about_us_tab h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+.tab_contents h3 {
+    font-size: 24px;
+}
+.tab_contents p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+
+.tab_contents_left .slide img {
+    width: 300px;
+    height: 400px;
+}
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* Article MOV */
+.mov2 {
+    width: 100%;
+    height: 500px;
+    /* background: url(/060_가변형단위/images/background01.jpeg) no-repeat; */
+    background-position: center center;
+    background-size: 100% 100%;
+    
+    /* 포지션 위치기준값 */
+    position: relative;
+    
+}
+.mov2 .video video {
+    width: 1060px;
+    height: 560px;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+/* 추가 플레이어 버튼 작업 */
+/* #mont_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 91.5%;
+    border: none;
+    background: none;
+    outline: none;
+} */
+/* #mont_btn i {
+    font-size: 96px;
+    color: rgba(255,255,255,0);
+    cursor: pointer;
+}
+#mont_btn i:hover {
+    color: rgba(255,255,255,0.8);
+} */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+.mov2 .mov2_first_text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+.mov2 .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 60px;
+    
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+
+.mov2 {
+    padding: 100px 0 0;
+}
+
+
+
+/* Section Why */
+.history {
+    background-color: #dfd2c2;
+    padding-top: 100px;
+    
+    /* 포지션 홀 때문에 높이값 추가 */
+    padding-top: 380px;
+    padding-bottom: 160px;
+}
+.history_images,
+.history_text {
+    width: 50%;
+}
+.history_images img {
+    width: 50%;
+}
+.history_content,
+.history_images {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Section FAQ */
+.faq_saying {
+    background-color:  #dfd2c2;
+    padding: 70px 0 130px;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Aside Banner */
+.banner {
+    background-color: #dfd2c2;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Footer */
+.footer {
+    background-color: #dfd2c2;
+    color: #000;
+    padding-top: 100px;
+    border-top: 1px solid #000;
+}
+
+/* Footer Logo, SNS */
+.footer .footer_logo {
+    width: 510px;
+}
+.footer_logo dt {
+    margin-bottom: 24px;
+}
+.footer_logo dd {
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+.footer_logo .sns {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Customer Support */
+.customer_support {
+    width: 330px;
+}
+.customer_support dt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.customer_support dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.customer_support dd a:hover {
+    color: #fc3;
+}
+
+
+/* Styling Service */
+.styling_service {
+    width: 330px;
+}
+.styling_service dt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.styling_service dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.styling_service dd a:hover {
+    color: #fc3;
+}
+
+
+/* Footer About */
+/* .footer_about {
+    width: 330px;
+ */
+    /* 플롯 */
+    /* float: left;
+} */
+
+/* Footer Rewards */
+.footer_rewards dt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer_rewards dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer_rewards dd a:hover {
+    color: #fc3;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 32px;
+}
+.copyright .copyright_line {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 32px;
+}
+
+/* 플롯 */
+.footer_logo,
+.customer_support,
+.styling_service,
+.footer_rewards {
+    float: left;
+}
+.copyright{
+    clear: both;
+}
+
+
+
+.on {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
