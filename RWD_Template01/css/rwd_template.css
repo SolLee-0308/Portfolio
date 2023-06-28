@@ -899,15 +899,27 @@ input, textarea {
 }
 
 
+/* GOTO TOP버튼 */
+.top_aside div {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    /* 포지션 */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
 
-
-
-
-
-
-
-
-
+    display: none;
+}
+.top_aside div a {
+    display: inline-block;
+    font-weight: bold;
+    color: #222;
+}
 
 
 
